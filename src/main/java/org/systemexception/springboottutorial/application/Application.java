@@ -1,4 +1,4 @@
-package org.systemexception.application;
+package org.systemexception.springboottutorial.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

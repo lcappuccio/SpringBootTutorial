@@ -1,4 +1,4 @@
-package org.systemexception.controller;
+package org.systemexception.springboottutorial.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
