@@ -3,6 +3,7 @@ package org.systemexception.application;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
@@ -10,6 +11,7 @@ import java.util.Arrays;
  * @author leo
  * @date 22/08/15 00:12
  */
+@ComponentScan({"org.systemexception.controller"})
 @SpringBootApplication
 public class Application {
 
