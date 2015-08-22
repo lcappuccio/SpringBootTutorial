@@ -26,6 +26,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebAppConfiguration
 public class HelloControllerTest {
 
+	// This test mocks the servlet request and response of the endpoint
+
 	private MockMvc sut;
 
 	@Before
