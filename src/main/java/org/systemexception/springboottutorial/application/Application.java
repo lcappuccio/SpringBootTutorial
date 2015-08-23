@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author leo
  * @date 22/08/15 00:12
  */
-@ComponentScan({"org.systemexception.controller"})
+@ComponentScan({"org.systemexception.springboottutorial.controller"})
 @SpringBootApplication
 public class Application {
 
