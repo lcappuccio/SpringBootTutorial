@@ -12,7 +12,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.systemexception.springboottutorial.Config.HelloControllerConfig;
+import org.systemexception.springboottutorial.config.HelloControllerConfig;
 import org.systemexception.springboottutorial.controller.HelloController;
 
 import static org.hamcrest.Matchers.equalTo;
