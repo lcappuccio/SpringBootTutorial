@@ -15,7 +15,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.systemexception.springboottutorial.config.HelloControllerConfig;
 import org.systemexception.springboottutorial.controller.HelloController;
 
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -44,6 +44,6 @@ public class HelloControllerTest {
 	@Test
 	public void get_a_message() throws Exception {
 		sut.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
-				.andExpect(content().string(equalTo(helloControllerConfig.getHelloMessage())));
+				.andExpect(content().string(containsString(helloControllerConfig.getHelloMessage())));
 	}
 }
