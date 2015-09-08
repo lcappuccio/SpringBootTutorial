@@ -19,7 +19,19 @@
         <version>1.2.5.RELEASE</version>
     </parent>
 
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
     <dependencies>
+	    <dependency>
+		    <groupId>com.github.lcappuccio</groupId>
+		    <artifactId>CommonLogger</artifactId>
+		    <version>1.1</version>
+	    </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
