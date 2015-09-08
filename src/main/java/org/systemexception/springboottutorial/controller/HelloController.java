@@ -28,7 +28,6 @@ public class HelloController {
 	public String index() {
 
 		logger.info("Invoked");
-
 		String message = helloControllerConfig.getHelloMessage();
 		message += "<br>" + LocalDate.now() + " " + LocalTime.now();
 		return (message);
