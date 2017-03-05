@@ -4,14 +4,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.mock.web.MockServletContext;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.systemexception.springboottutorial.application.Application;
 import org.systemexception.springboottutorial.config.HelloControllerConfig;
 import org.systemexception.springboottutorial.controller.HelloController;
 
@@ -23,10 +22,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @author leo
  * @date 22/08/15 00:35
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = {MockServletContext.class, HelloController.class, HelloControllerConfig
-		.class})
-@WebAppConfiguration
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = {Application.class})
 public class HelloControllerTest {
 
 	// This test mocks the servlet request and response of the endpoint
